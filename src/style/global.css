@@ -1,0 +1,18 @@
+:root {
+  --primary: #3b82f6;
+  --bg: #0f172a;
+  --text: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Themes */
+[data-theme="blue"] { --primary: #3b82f6; }
+[data-theme="purple"] { --primary: #a855f7; }
+[data-theme="green"] { --primary: #22c55e; }
+[data-theme="red"] { --primary: #ef4444; }

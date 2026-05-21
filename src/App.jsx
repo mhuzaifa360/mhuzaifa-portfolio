@@ -6,6 +6,7 @@ import Projects from "./components/Projects"
 import Education from "./components/Education"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import ThemeSwitcher from "./components/ThemeSwitcher"
 
  function App() {
   return (
@@ -18,6 +19,7 @@ import Footer from "./components/Footer"
       <Education />
       <Contact />
       <Footer />
+      <ThemeSwitcher />
     </div>
   )
 }
