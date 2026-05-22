@@ -1,18 +1,13 @@
 import { useState } from "react";
+import { navLinks } from "./constant/navlinks";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { name: "Home", href: "#hero" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Resume", href: "#resume" },
-    { name: "Projects", href: "#projects" },
-  ];
+
 
   return (
-    <nav className="w-full fixed top-0 z-50 backdrop-blur-md bg-[#0a0c12]/90 border-b border-[#1e243e]">
+    <nav className="w-full fixed top-0 z-50 backdrop-blur-md bg-[#0a0c12]/90 border-b border-[#1e243e] ">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - M Huzaifa */}
