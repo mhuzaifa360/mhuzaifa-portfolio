@@ -4,12 +4,13 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Resume", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Contact me", href: "#" },
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Resume", href: "#resume" },
+    { name: "Projects", href: "#projects" },
+    { name: "Contact me", href: "#contact" },
+    { name: "Experience", href: "#experience" },
   ];
 
   return (
