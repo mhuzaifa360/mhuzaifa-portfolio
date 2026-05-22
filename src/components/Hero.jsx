@@ -83,7 +83,9 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <button className="group relative px-8 py-3.5 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#3b4eff]/30">
                 <span className="relative z-10 flex items-center gap-2">
-                  View My Work
+                  <a href="#projects">
+                  View My Work  
+                  </a>
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
