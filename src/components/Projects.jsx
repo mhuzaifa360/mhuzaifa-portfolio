@@ -1,27 +1,21 @@
-const projects = [
-  {
-    name: "TutorNest",
-    desc: "Online learning platform for students and tutors.",
-  },
-  {
-    name: "Portfolio Website",
-    desc: "Modern responsive portfolio design.",
-  }
-]
-
 export default function Projects() {
   return (
-    <section id="projects" className="p-10">
-      <h2 className="text-3xl font-bold">Projects</h2>
+    <section id="projects">
+      <h2>Projects</h2>
 
-      <div className="grid md:grid-cols-2 gap-5 mt-5">
-        {projects.map((p, i) => (
-          <div key={i} className="bg-gray-900 p-5 rounded-xl">
-            <h3 className="text-xl font-bold">{p.name}</h3>
-            <p className="text-gray-400">{p.desc}</p>
-          </div>
-        ))}
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "20px" }}>
+        
+        <div className="card">
+          <h3>E-Commerce App</h3>
+          <p>Full MERN stack shopping platform</p>
+        </div>
+
+        <div className="card">
+          <h3>Job Portal</h3>
+          <p>AI-based job matching system</p>
+        </div>
+
       </div>
     </section>
-  )
+  );
 }

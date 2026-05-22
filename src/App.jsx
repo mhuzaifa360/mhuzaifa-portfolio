@@ -1,27 +1,16 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Skills from "./components/Skills"
-import Projects from "./components/Projects"
-import Education from "./components/Education"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import ThemeSwitcher from "./components/ThemeSwitcher"
+import Navbar from "./components/Navbar";
 
- function App() {
+function App() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-[#0a0c12] min-h-screen">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
-      <ThemeSwitcher />
+      {/* Rest of your sections will go here */}
+      <div className="pt-32 text-center text-white">
+        <h1 className="text-5xl font-bold">Hi, I'm <span className="text-[#8b9dff]">Huzaifa</span></h1>
+        <p className="text-[#cdd9ff] mt-4">MERN Stack Developer</p>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App;

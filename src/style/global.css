@@ -1,18 +1,36 @@
 :root {
-  --primary: #3b82f6;
-  --bg: #0f172a;
-  --text: #ffffff;
+  --bg: #0b0f19;
+  --card: #111827;
+  --text: #f7f7f7;
+
+  --primary: #ffb22c;
+  --secondary: #854836;
+  --accent: #ffffff;
 }
 
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
-/* Themes */
-[data-theme="blue"] { --primary: #3b82f6; }
-[data-theme="purple"] { --primary: #a855f7; }
-[data-theme="green"] { --primary: #22c55e; }
-[data-theme="red"] { --primary: #ef4444; }
+/* PREMIUM GRADIENT BACKGROUND */
+.section {
+  padding: 100px 10%;
+}
+
+/* CARDS */
+.card {
+  background: linear-gradient(145deg, #111827, #0b0f19);
+  border: 1px solid rgba(255, 178, 44, 0.15);
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 40px rgba(255, 178, 44, 0.15);
+}
