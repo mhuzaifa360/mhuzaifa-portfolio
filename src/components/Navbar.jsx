@@ -9,8 +9,6 @@ const Navbar = () => {
     { name: "Skills", href: "#skills" },
     { name: "Resume", href: "#resume" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact me", href: "#contact" },
-    { name: "Experience", href: "#experience" },
   ];
 
   return (

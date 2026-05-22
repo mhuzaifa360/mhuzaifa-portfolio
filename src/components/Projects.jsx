@@ -107,7 +107,7 @@ const Projects = () => {
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden">
+    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden" id="projects">
       {/* Background Effects */}
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#5f72ee]/5 rounded-full blur-3xl"></div>
 

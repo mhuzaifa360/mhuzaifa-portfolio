@@ -29,7 +29,7 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden">
+    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden" id="skills">
       {/* Background Effects */}
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-[#5f72ee]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-[#3b4eff]/5 rounded-full blur-3xl"></div>

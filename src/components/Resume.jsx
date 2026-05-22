@@ -73,7 +73,7 @@ const Resume = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#0a0c12] to-[#0d1020] py-20 px-6 md:px-12 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-[#0a0c12] to-[#0d1020] py-20 px-6 md:px-12 relative overflow-hidden" id="resume">
       {/* Background Effects */}
       <div className="absolute top-0 left-1/2 w-96 h-96 bg-[#3b4eff]/5 rounded-full blur-3xl -translate-x-1/2"></div>
 
