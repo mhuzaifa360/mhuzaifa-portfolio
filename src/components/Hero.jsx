@@ -26,7 +26,9 @@ const Hero = () => {
 
             {/* Main Heading */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
-              Hi, I'm <br />
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                Hi, I'm
+              </h2>
               <span className="bg-gradient-to-r from-white via-[#8b9dff] to-[#5f7cff] bg-clip-text text-transparent animate-gradient">
                 Muhammad Huzaifa
               </span>

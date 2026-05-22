@@ -1,5 +1,7 @@
 // src/components/About.jsx
 import { useState, useEffect } from "react";
+// About.jsx ke top pe
+import profilePic from "../assets/images/huzaifa.jpg";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,7 +11,7 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden" id="about">
+    <section className="bg-[#0a0c12] py-10 px-6 md:px-12 relative overflow-hidden" id="about">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#3b4eff]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#5f72ee]/5 rounded-full blur-3xl"></div>
@@ -45,10 +47,10 @@ const About = () => {
                     {/* 
                       ⭐ YAHAN APNI PICTURE DALEN ⭐
                       Replace "your-photo.jpg" with your actual image path
-                      Image rakhen: src/assets/profile.jpg
+                      Image rakhen: src/assets/images/huzaifa.jpg
                     */}
                     <img 
-                      src="https://placehold.co/400x400/1a1f36/5f7cff?text=Your+Photo" 
+                      src={profilePic} 
                       alt="Huzaifa"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
