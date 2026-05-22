@@ -14,7 +14,8 @@ const Achievements = () => {
       title: "Best Developer Award",
       organization: "Tech Solutions Inc.",
       year: "2024",
-      description: "Recognized for outstanding contribution to major project delivery and team leadership.",
+      description:
+        "Recognized for outstanding contribution to major project delivery and team leadership.",
       icon: "🏆",
       color: "from-yellow-500/20 to-orange-500/20",
     },
@@ -23,7 +24,8 @@ const Achievements = () => {
       title: "Hackathon Winner",
       organization: "CodeFest 2023",
       year: "2023",
-      description: "First place in national hackathon for building an AI-powered healthcare solution.",
+      description:
+        "First place in national hackathon for building an AI-powered healthcare solution.",
       icon: "🥇",
       color: "from-blue-500/20 to-cyan-500/20",
     },
@@ -32,7 +34,8 @@ const Achievements = () => {
       title: "Open Source Contributor",
       organization: "GitHub",
       year: "2023",
-      description: "Contributed to 10+ open source projects including React and Node.js libraries.",
+      description:
+        "Contributed to 10+ open source projects including React and Node.js libraries.",
       icon: "🌟",
       color: "from-purple-500/20 to-pink-500/20",
     },
@@ -41,7 +44,8 @@ const Achievements = () => {
       title: "100+ LeetCode Problems",
       organization: "LeetCode",
       year: "2024",
-      description: "Solved over 100 data structure and algorithm problems on LeetCode platform.",
+      description:
+        "Solved over 100 data structure and algorithm problems on LeetCode platform.",
       icon: "💡",
       color: "from-green-500/20 to-emerald-500/20",
     },
@@ -50,7 +54,8 @@ const Achievements = () => {
       title: "Employee of the Month",
       organization: "Digital Solutions",
       year: "2023",
-      description: "Awarded for exceptional performance and going above & beyond duties.",
+      description:
+        "Awarded for exceptional performance and going above & beyond duties.",
       icon: "⭐",
       color: "from-red-500/20 to-rose-500/20",
     },
@@ -59,7 +64,8 @@ const Achievements = () => {
       title: "Published Technical Article",
       organization: "Medium",
       year: "2024",
-      description: "Published article on 'Modern Web Development Trends' with 10k+ reads.",
+      description:
+        "Published article on 'Modern Web Development Trends' with 10k+ reads.",
       icon: "📝",
       color: "from-indigo-500/20 to-blue-500/20",
     },
@@ -80,9 +86,11 @@ const Achievements = () => {
 
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <div className={`text-center mb-16 transition-all duration-1000 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}>
+        <div
+          className={`text-center mb-16 transition-all duration-1000 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+        >
           <span className="text-[#9aa9ff] font-medium tracking-wide text-sm md:text-base bg-[#1e243e]/50 px-5 py-2 rounded-full border border-[#2a3150] inline-block mb-4">
             🏅 Recognition & Awards
           </span>
@@ -96,11 +104,16 @@ const Achievements = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className={`grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 transition-all duration-1000 delay-300 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-        }`}>
+        <div
+          className={`grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 transition-all duration-1000 delay-300 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          }`}
+        >
           {stats.map((stat, index) => (
-            <div key={index} className="text-center bg-gradient-to-br from-[#0f1222] to-[#0a0c12] p-6 rounded-2xl border border-[#262b44] hover:border-[#3b4eff]/50 transition-all hover:scale-105">
+            <div
+              key={index}
+              className="text-center bg-gradient-to-br from-[#0f1222] to-[#0a0c12] p-6 rounded-2xl border border-[#262b44] hover:border-[#3b4eff]/50 transition-all hover:scale-105"
+            >
               <div className="text-4xl mb-2">{stat.icon}</div>
               <div className="text-3xl font-bold text-white">{stat.value}</div>
               <div className="text-[#b9c3e6] text-sm">{stat.label}</div>
@@ -111,10 +124,12 @@ const Achievements = () => {
         {/* Achievements Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {achievements.map((achievement, index) => (
-            <div 
+            <div
               key={achievement.id}
               className={`group transition-all duration-700 delay-${index * 100} transform ${
-                isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+                isVisible
+                  ? "translate-y-0 opacity-100"
+                  : "translate-y-20 opacity-0"
               }`}
             >
               <div className="relative bg-gradient-to-br from-[#0f1222] to-[#0a0c12] rounded-2xl overflow-hidden border border-[#262b44] hover:border-[#3b4eff]/50 transition-all hover:scale-105 hover:shadow-2xl">
@@ -130,8 +145,12 @@ const Achievements = () => {
                   <h3 className="text-lg font-bold text-white mb-1 group-hover:text-[#5f7cff] transition-colors">
                     {achievement.title}
                   </h3>
-                  <p className="text-[#5f7cff] text-sm mb-2">{achievement.organization}</p>
-                  <p className="text-[#b9c3e6] text-sm">{achievement.description}</p>
+                  <p className="text-[#5f7cff] text-sm mb-2">
+                    {achievement.organization}
+                  </p>
+                  <p className="text-[#b9c3e6] text-sm">
+                    {achievement.description}
+                  </p>
                 </div>
               </div>
             </div>

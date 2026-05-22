@@ -36,9 +36,11 @@ const Skills = () => {
 
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <div className={`text-center mb-16 transition-all duration-1000 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}>
+        <div
+          className={`text-center mb-16 transition-all duration-1000 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
+        >
           <span className="text-[#9aa9ff] font-medium tracking-wide text-sm md:text-base bg-[#1e243e]/50 px-5 py-2 rounded-full border border-[#2a3150] inline-block mb-4">
             💪 My Expertise
           </span>
@@ -53,9 +55,13 @@ const Skills = () => {
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* LEFT SIDE - Technical Skills with Progress Bars */}
-          <div className={`flex-1 transition-all duration-1000 delay-300 transform ${
-            isVisible ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"
-          }`}>
+          <div
+            className={`flex-1 transition-all duration-1000 delay-300 transform ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "-translate-x-20 opacity-0"
+            }`}
+          >
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <span className="text-3xl">💻</span> Technical Skills
             </h3>
@@ -65,12 +71,16 @@ const Skills = () => {
                   <div className="flex justify-between items-center mb-2">
                     <div className="flex items-center gap-2">
                       <span className="text-xl">{skill.icon}</span>
-                      <span className="text-[#cdd9ff] font-semibold">{skill.name}</span>
+                      <span className="text-[#cdd9ff] font-semibold">
+                        {skill.name}
+                      </span>
                     </div>
-                    <span className="text-[#5f7cff] text-sm font-semibold">{skill.level}%</span>
+                    <span className="text-[#5f7cff] text-sm font-semibold">
+                      {skill.level}%
+                    </span>
                   </div>
                   <div className="h-2 bg-[#1e243e] rounded-full overflow-hidden">
-                    <div 
+                    <div
                       className="h-full rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] transition-all duration-1000 ease-out"
                       style={{ width: isVisible ? `${skill.level}%` : "0%" }}
                     >
@@ -83,15 +93,19 @@ const Skills = () => {
           </div>
 
           {/* RIGHT SIDE - Soft Skills & Tools */}
-          <div className={`flex-1 transition-all duration-1000 delay-500 transform ${
-            isVisible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
-          }`}>
+          <div
+            className={`flex-1 transition-all duration-1000 delay-500 transform ${
+              isVisible
+                ? "translate-x-0 opacity-100"
+                : "translate-x-20 opacity-0"
+            }`}
+          >
             <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
               <span className="text-3xl">🤝</span> Soft Skills
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
               {softSkills.map((skill, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-gradient-to-r from-[#1a1f36] to-transparent p-3 rounded-xl border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all hover:scale-105"
                 >
@@ -105,8 +119,21 @@ const Skills = () => {
               <span className="text-3xl">🛠️</span> Tools & Technologies
             </h3>
             <div className="flex flex-wrap gap-3">
-              {["Git", "GitHub", "VS Code", "Postman", "Docker", "Vercel", "Netlify", "Firebase", "Redux", "JWT", "Socket.io", "Three.js"].map((tool, index) => (
-                <span 
+              {[
+                "Git",
+                "GitHub",
+                "VS Code",
+                "Postman",
+                "Docker",
+                "Vercel",
+                "Netlify",
+                "Firebase",
+                "Redux",
+                "JWT",
+                "Socket.io",
+                "Three.js",
+              ].map((tool, index) => (
+                <span
                   key={index}
                   className="px-4 py-2 bg-[#0f1222] rounded-full text-[#cdd9ff] text-sm border border-[#2a3150] hover:border-[#5f7cff] hover:bg-[#1a1f36] transition-all"
                 >

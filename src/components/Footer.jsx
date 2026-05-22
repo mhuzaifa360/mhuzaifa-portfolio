@@ -28,12 +28,42 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: "GitHub", icon: "💻", url: "https://github.com/huzaifa", color: "hover:text-gray-300" },
-    { name: "LinkedIn", icon: "🔗", url: "https://linkedin.com/in/huzaifa", color: "hover:text-blue-400" },
-    { name: "Twitter", icon: "🐦", url: "https://twitter.com/huzaifa", color: "hover:text-sky-400" },
-    { name: "Instagram", icon: "📸", url: "https://instagram.com/huzaifa", color: "hover:text-pink-500" },
-    { name: "Facebook", icon: "📘", url: "https://facebook.com/huzaifa", color: "hover:text-blue-600" },
-    { name: "YouTube", icon: "📺", url: "https://youtube.com/@huzaifa", color: "hover:text-red-600" },
+    {
+      name: "GitHub",
+      icon: "💻",
+      url: "https://github.com/huzaifa",
+      color: "hover:text-gray-300",
+    },
+    {
+      name: "LinkedIn",
+      icon: "🔗",
+      url: "https://linkedin.com/in/huzaifa",
+      color: "hover:text-blue-400",
+    },
+    {
+      name: "Twitter",
+      icon: "🐦",
+      url: "https://twitter.com/huzaifa",
+      color: "hover:text-sky-400",
+    },
+    {
+      name: "Instagram",
+      icon: "📸",
+      url: "https://instagram.com/huzaifa",
+      color: "hover:text-pink-500",
+    },
+    {
+      name: "Facebook",
+      icon: "📘",
+      url: "https://facebook.com/huzaifa",
+      color: "hover:text-blue-600",
+    },
+    {
+      name: "YouTube",
+      icon: "📺",
+      url: "https://youtube.com/@huzaifa",
+      color: "hover:text-red-600",
+    },
   ];
 
   return (
@@ -44,32 +74,45 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-          
           {/* Column 1 - Brand */}
-          <div className={`transition-all duration-1000 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}>
+          <div
+            className={`transition-all duration-1000 transform ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             <h3 className="text-2xl font-extrabold bg-gradient-to-r from-white to-[#8b9dff] bg-clip-text text-transparent mb-4">
               M Huzaifa
             </h3>
             <p className="text-[#b9c3e6] text-sm mb-4">
-              MERN Stack Developer passionate about building modern, scalable web applications that deliver exceptional user experiences.
+              MERN Stack Developer passionate about building modern, scalable
+              web applications that deliver exceptional user experiences.
             </p>
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-[#7e8eff] text-xs">Available for freelance work</span>
+              <span className="text-[#7e8eff] text-xs">
+                Available for freelance work
+              </span>
             </div>
           </div>
 
           {/* Column 2 - Quick Links */}
-          <div className={`transition-all duration-1000 delay-200 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}>
+          <div
+            className={`transition-all duration-1000 delay-200 transform ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             <h4 className="text-white font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm flex items-center gap-2">
+                  <a
+                    href={link.href}
+                    className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm flex items-center gap-2"
+                  >
                     <span className="text-[#5f7cff]">▹</span>
                     {link.name}
                   </a>
@@ -79,9 +122,13 @@ const Footer = () => {
           </div>
 
           {/* Column 3 - Services */}
-          <div className={`transition-all duration-1000 delay-400 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}>
+          <div
+            className={`transition-all duration-1000 delay-400 transform ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             <h4 className="text-white font-bold text-lg mb-4">Services</h4>
             <ul className="space-y-2">
               {services.map((service, index) => (
@@ -96,20 +143,30 @@ const Footer = () => {
           </div>
 
           {/* Column 4 - Contact Info */}
-          <div className={`transition-all duration-1000 delay-600 transform ${
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }`}>
+          <div
+            className={`transition-all duration-1000 delay-600 transform ${
+              isVisible
+                ? "translate-y-0 opacity-100"
+                : "translate-y-20 opacity-0"
+            }`}
+          >
             <h4 className="text-white font-bold text-lg mb-4">Get In Touch</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
                 <span className="text-[#5f7cff] text-xl">📧</span>
-                <a href="mailto:huzaifa@example.com" className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm">
+                <a
+                  href="mailto:huzaifa@example.com"
+                  className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
+                >
                   huzaifa@example.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <span className="text-[#5f7cff] text-xl">📱</span>
-                <a href="tel:+923001234567" className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm">
+                <a
+                  href="tel:+923001234567"
+                  className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
+                >
                   +92 300 1234567
                 </a>
               </li>
@@ -122,9 +179,11 @@ const Footer = () => {
         </div>
 
         {/* Social Links & Newsletter */}
-        <div className={`border-t border-b border-[#1e243e] py-8 mb-8 transition-all duration-1000 delay-800 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-        }`}>
+        <div
+          className={`border-t border-b border-[#1e243e] py-8 mb-8 transition-all duration-1000 delay-800 transform ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          }`}
+        >
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Social Links */}
             <div className="flex gap-4">
@@ -159,8 +218,8 @@ const Footer = () => {
         {/* Copyright */}
         <div className="text-center">
           <p className="text-[#7e8eff] text-sm">
-            © {year} M Huzaifa. All rights reserved. Built with 
-            <span className="text-red-500 mx-1">❤️</span> 
+            © {year} M Huzaifa. All rights reserved. Built with
+            <span className="text-red-500 mx-1">❤️</span>
             using React & Tailwind CSS
           </p>
           <p className="text-[#7e8eff] text-xs mt-2">

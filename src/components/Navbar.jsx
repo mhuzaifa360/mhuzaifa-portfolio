@@ -18,7 +18,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-4">
         <div className="flex items-center justify-between">
           {/* Logo - M Huzaifa */}
-          <a href="#" className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-white to-[#8b9dff] bg-clip-text text-transparent tracking-tight">
+          <a
+            href="#"
+            className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-white to-[#8b9dff] bg-clip-text text-transparent tracking-tight"
+          >
             M Huzaifa
           </a>
 
@@ -42,8 +45,18 @@ const Navbar = () => {
               href="#"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold text-sm hover:from-[#2c3fe0] hover:to-[#4a5de0] shadow-lg shadow-[#3b4eff]/20 transition-all duration-200 hover:scale-105"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                />
               </svg>
               Download CV
             </a>
@@ -54,11 +67,26 @@ const Navbar = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-[#cdd9ff] hover:text-[#5f7cff] focus:outline-none"
           >
-            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-7 h-7"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               )}
             </svg>
           </button>
@@ -85,8 +113,18 @@ const Navbar = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="inline-flex items-center justify-center w-full gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold text-sm hover:from-[#2c3fe0] hover:to-[#4a5de0] transition-all"
                 >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                    />
                   </svg>
                   Download CV
                 </a>
