@@ -74,9 +74,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-[#b9c3e6] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              I build modern, responsive and user-friendly web applications that
-              deliver exceptional experiences. Turning ideas into reality with
-              clean code and beautiful design.
+              I build modern, responsive and user-friendly web applications with clean code, smooth UI, and powerful functionality. Passionate about creating real-world projects and improving my full stack development skills every day.
             </p>
 
             {/* CTA Buttons */}
@@ -117,7 +115,10 @@ const Hero = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                Contact Me
+                <a href="mailto:mhuzaifa3128352877@gmail.com">
+                  Contact Me
+                </a>
+                
               </button>
             </div>
 
