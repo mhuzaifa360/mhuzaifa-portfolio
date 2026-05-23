@@ -1,6 +1,10 @@
 // src/components/Resume.jsx
 import { useState, useEffect } from "react";
 
+import certifications from "./constant/certifications";
+import experience from "./constant/experience";
+import education from "./constant/education";
+
 const Resume = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -8,72 +12,11 @@ const Resume = () => {
     setIsVisible(true);
   }, []);
 
-  const education = [
-    {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Engineering & Technology",
-      year: "2020 - 2024",
-      description: "Major in Software Engineering, CGPA: 3.8/4.0",
-      icon: "🎓",
-    },
-    {
-      degree: "Intermediate in Computer Science",
-      institution: "Govt. College Lahore",
-      year: "2018 - 2020",
-      description: "Specialized in Computer Science and Mathematics",
-      icon: "📚",
-    },
-  ];
-
-  const experience = [
-    {
-      title: "MERN Stack Developer",
-      company: "Tech Solutions Inc.",
-      year: "2023 - Present",
-      description: [
-        "Building scalable web applications using MERN stack",
-        "Collaborating with cross-functional teams to deliver features",
-        "Optimizing application performance and implementing best practices",
-      ],
-      icon: "💼",
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "WebCraft Agency",
-      year: "2022 - 2023",
-      description: [
-        "Developed responsive UI components using React and Tailwind",
-        "Integrated REST APIs and managed state using Redux",
-        "Participated in code reviews and team meetings",
-      ],
-      icon: "🚀",
-    },
-    {
-      title: "Freelance Web Developer",
-      company: "Self-employed",
-      year: "2021 - Present",
-      description: [
-        "Delivered 15+ custom web solutions for clients worldwide",
-        "Managed full project lifecycle from requirements to deployment",
-        "Provided ongoing maintenance and support",
-      ],
-      icon: "✨",
-    },
-  ];
-
-  const certifications = [
-    { name: "MERN Stack Certification - Coursera", year: "2023", icon: "📜" },
-    { name: "Advanced React - Meta", year: "2023", icon: "⚛️" },
-    {
-      name: "JavaScript Algorithms & Data Structures - freeCodeCamp",
-      year: "2022",
-      icon: "🟡",
-    },
-    { name: "Tailwind CSS Mastery - Udemy", year: "2023", icon: "🎨" },
-  ];
-
   return (
-    <section className="bg-gradient-to-b from-[#0a0c12] to-[#0d1020] py-20 px-6 md:px-12 relative overflow-hidden" id="resume">
+    <section
+      className="bg-gradient-to-b from-[#0a0c12] to-[#0d1020] py-20 px-6 md:px-12 relative overflow-hidden"
+      id="resume"
+    >
       {/* Background Effects */}
       <div className="absolute top-0 left-1/2 w-96 h-96 bg-[#3b4eff]/5 rounded-full blur-3xl -translate-x-1/2"></div>
 
