@@ -2,11 +2,11 @@
 import { useState, useEffect } from "react";
 // About.jsx ke top pe
 import profilePic from "../assets/images/huzaifa.jpg";
-import workIcon from '../assets/icons/icons8-work-100.png';
-import mapIcon from '../assets/icons/icons8-address-100.png';
-import dateIcon from '../assets/icons/icons8-date-100.png';
-import mailIcon from '../assets/icons/icons8-mail-100.png';
-
+import workIcon from "../assets/icons/icons8-work-100.png";
+import mapIcon from "../assets/icons/icons8-address-100.png";
+import dateIcon from "../assets/icons/icons8-date-100.png";
+import mailIcon from "../assets/icons/icons8-mail-100.png";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { huzaifaInfo } from "./constant/huzaifaInfo";
 
 const About = () => {
@@ -74,25 +74,43 @@ const About = () => {
 
                 {/* Quick Info Cards */}
                 <div className="grid grid-cols-2 gap-3 mb-6">
+                  {/* Location Card */}
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1"><img src={mapIcon} alt="Location" width={40}/></span>
+                    <span className="text-2xl block mb-1">
+                      <img src={mapIcon} alt="Location" width={40} />
+                    </span>
                     <p className="text-[#b9c3e6] text-xs">Based in</p>
-                    <p className="text-white text-sm font-semibold">{huzaifaInfo.personalInfo.address}</p>
+                    <p className="text-white text-sm font-semibold">
+                      {huzaifaInfo.personalInfo.address}
+                    </p>
                   </div>
+                  {/* Birthday Card */}
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1"><img src={dateIcon} alt="Birthday" width={40}/></span>
+                    <span className="text-2xl block mb-1">
+                      <img src={dateIcon} alt="Birthday" width={40} />
+                    </span>
                     <p className="text-[#b9c3e6] text-xs">Birthday</p>
-                    <p className="text-white text-sm font-semibold">{huzaifaInfo.personalInfo.birthday}</p>
+                    <p className="text-white text-sm font-semibold">
+                      {huzaifaInfo.personalInfo.birthday}
+                    </p>
                   </div>
-                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1"><img src={mailIcon} alt="Email" width={40}/></span>
+                  {/* Email Card */}
+                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all min-w-0">
+                    <span className="text-2xl block mb-1">
+                      <img src={mailIcon} alt="Email" width={40} />
+                    </span>
+
                     <p className="text-[#b9c3e6] text-xs">Email</p>
-                    <p className="text-white text-sm font-semibold truncate">
+
+                    <p className="text-white text-sm font-semibold break-all w-full">
                       {huzaifaInfo.personalInfo.email}
                     </p>
                   </div>
+                  {/* Availability Card */}
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1"><img src={workIcon} alt="Available" width={40}/></span>
+                    <span className="text-2xl block mb-1">
+                      <img src={workIcon} alt="Available" width={40} />
+                    </span>
                     <p className="text-[#b9c3e6] text-xs">Available</p>
                     <p className="text-green-400 text-sm font-semibold">
                       {huzaifaInfo.personalInfo.availability}
@@ -102,22 +120,11 @@ const About = () => {
 
                 {/* Download CV Button in About */}
                 <a
-                  href="#"
+                  href={huzaifaInfo.socialLinks.resume}
+                  download="Muhammad_Huzaifa_Resume.pdf"
                   className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold hover:from-[#2c3fe0] hover:to-[#4a5de0] transition-all hover:scale-105 shadow-lg shadow-[#3b4eff]/20"
                 >
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                    />
-                  </svg>
+                  <MdOutlineFileDownload className="text-[20px]" />
                   Download CV
                 </a>
               </div>
@@ -198,7 +205,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Projects</p>
-                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.stats.projectsCompleted} Completed</p>
+                  <p className="text-[#b9c3e6] text-sm">
+                    {huzaifaInfo.stats.projectsCompleted} Completed
+                  </p>
                 </div>
               </div>
 
@@ -220,7 +229,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
-                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.email}</p>
+                  <p className="text-[#b9c3e6] text-sm">
+                    {huzaifaInfo.personalInfo.email}
+                  </p>
                 </div>
               </div>
 
@@ -248,7 +259,9 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Location</p>
-                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.address}</p>
+                  <p className="text-[#b9c3e6] text-sm">
+                    {huzaifaInfo.personalInfo.address}
+                  </p>
                 </div>
               </div>
             </div>
@@ -256,11 +269,10 @@ const About = () => {
             {/* Quote */}
             <div className="bg-gradient-to-r from-[#1a1f36]/30 to-transparent p-5 rounded-2xl border-l-4 border-[#5f7cff]">
               <p className="text-[#cdd9ff] italic text-sm md:text-base">
-                "Code is poetry written in logic. I strive to create elegant
-                solutions that are both functional and beautiful."
+                "I love building modern and user-friendly websites with clean code."
               </p>
               <p className="text-[#5f7cff] text-sm mt-2 font-semibold">
-                — Huzaifa
+                — {huzaifaInfo.personalInfo.lastName}
               </p>
             </div>
           </div>
