@@ -1,6 +1,20 @@
 // src/components/Skills.jsx
 import { useState, useEffect } from "react";
 
+import { huzaifaInfo } from "./constant/huzaifaInfo";
+
+// Importing icons for tech stack
+import reactIcon from "../assets/icons/icons8-react-js-100.png";
+import mongodbIcon from "../assets/icons/icons8-mongodb-100.png";
+import expressIcon from "../assets/icons/icons8-express-js-100.png";
+import nodejsIcon from "../assets/icons/icons8-node-js-100.png";
+import msOfficeIcon from "../assets/icons/icons8-ms-office-100.png";
+import tailwindIcon from "../assets/icons/icons8-tailwind-css-100.png";
+import mysqlIcon from "../assets/icons/icons8-my-sql-100.png";
+
+
+
+
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -9,14 +23,13 @@ const Skills = () => {
   }, []);
 
   const technicalSkills = [
-    { name: "React.js", level: 90, icon: "⚛️", color: "#61DAFB" },
-    { name: "Node.js", level: 85, icon: "💚", color: "#68A063" },
-    { name: "MongoDB", level: 85, icon: "🍃", color: "#47A248" },
-    { name: "Express.js", level: 80, icon: "🚀", color: "#000000" },
-    { name: "JavaScript", level: 92, icon: "🟡", color: "#F7DF1E" },
-    { name: "TypeScript", level: 75, icon: "🔵", color: "#3178C6" },
-    { name: "Tailwind CSS", level: 88, icon: "🎨", color: "#06B6D4" },
-    { name: "Next.js", level: 70, icon: "▲", color: "#000000" },
+    { name: "React.js", level: 90, icon: reactIcon, color: "#61DAFB" },
+    { name: "Node.js", level: 85, icon: nodejsIcon, color: "#68A063" },
+    { name: "MongoDB", level: 85, icon: mongodbIcon, color: "#47A248" },
+    { name: "Express.js", level: 80, icon: expressIcon, color: "#000000" },
+    { name: "MS Office", level: 92, icon: msOfficeIcon, color: "#F7DF1E" },
+    { name: "Tailwind CSS", level: 88, icon: tailwindIcon, color: "#06B6D4" },
+    { name: "MySQL", level: 88, icon: mysqlIcon, color: "#F7DF1E" },
   ];
 
   const softSkills = [
@@ -70,7 +83,7 @@ const Skills = () => {
                 <div key={index} className="group">
                   <div className="flex justify-between items-center mb-2">
                     <div className="flex items-center gap-2">
-                      <span className="text-xl">{skill.icon}</span>
+                      <img src={skill.icon} alt={skill.name} className="w-6 h-6" />
                       <span className="text-[#cdd9ff] font-semibold">
                         {skill.name}
                       </span>
@@ -119,20 +132,7 @@ const Skills = () => {
               <span className="text-3xl">🛠️</span> Tools & Technologies
             </h3>
             <div className="flex flex-wrap gap-3">
-              {[
-                "Git",
-                "GitHub",
-                "VS Code",
-                "Postman",
-                "Docker",
-                "Vercel",
-                "Netlify",
-                "Firebase",
-                "Redux",
-                "JWT",
-                "Socket.io",
-                "Three.js",
-              ].map((tool, index) => (
+              {huzaifaInfo.toolsAndTechnologies.map((tool, index) => (
                 <span
                   key={index}
                   className="px-4 py-2 bg-[#0f1222] rounded-full text-[#cdd9ff] text-sm border border-[#2a3150] hover:border-[#5f7cff] hover:bg-[#1a1f36] transition-all"

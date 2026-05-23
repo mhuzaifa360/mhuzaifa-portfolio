@@ -91,6 +91,22 @@ export const huzaifaInfo = {
     resume: "/Huzaifa_Resume.pdf",
   },
 
+  toolsAndTechnologies: [
+    "Git & GitHub",
+    "VS Code",
+    "Postman",
+    "React JS",
+    "Vercel",
+    "MongoDB",
+    "MySQL",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "JWT Authentication",
+    "bcrypt",
+    "CORS",
+    "Multer",
+  ],
   // Updated projects with more realistic descriptions and technologies
   projects: [
     {
