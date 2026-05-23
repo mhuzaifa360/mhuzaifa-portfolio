@@ -1,5 +1,16 @@
 // src/components/Hero.jsx
 import { useState, useEffect } from "react";
+// Importing icons for social links
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { FaYoutube } from "react-icons/fa";
+
+// Importing icons for tech stack
+import reactIcon from "../assets/icons/icons8-react-js-100.png";
+import mongodbIcon from "../assets/icons/icons8-mongodb-100.png";
+import expressIcon from "../assets/icons/icons8-express-js-100.png";
+import nodejsIcon from "../assets/icons/icons8-node-js-100.png";
 
 const Hero = () => {
   // Hero animation state
@@ -74,16 +85,17 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-[#b9c3e6] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              I build modern, responsive and user-friendly web applications with clean code, smooth UI, and powerful functionality. Passionate about creating real-world projects and improving my full stack development skills every day.
+              I build modern, responsive and user-friendly web applications with
+              clean code, smooth UI, and powerful functionality. Passionate
+              about creating real-world projects and improving my full stack
+              development skills every day.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <button className="group relative px-8 py-3.5 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#3b4eff]/30">
                 <span className="relative z-10 flex items-center gap-2">
-                  <a href="#projects">
-                  View My Work  
-                  </a>
+                  <a href="#projects">View My Work</a>
                   <svg
                     className="w-5 h-5 group-hover:translate-x-1 transition-transform"
                     fill="none"
@@ -115,22 +127,25 @@ const Hero = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a href="mailto:mhuzaifa3128352877@gmail.com">
+                <a
+                  href="mailto:mhuzaifa3128352877@gmail.com?subject=Project Inquiry&body=Hello Muhammad Huzaifa,"
+                >
                   Contact Me
                 </a>
-                
               </button>
             </div>
 
             {/* Stats / Social Icons */}
             <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start mt-10 pt-6 border-t border-[#1e243e]">
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-white">2+</span>
-                <span className="text-[#b9c3e6] text-sm">Years Experience</span>
+                <span className="text-2xl font-bold text-white">6+</span>
+                <span className="text-[#b9c3e6] text-sm">
+                  Months Experience
+                </span>
               </div>
               <div className="w-px h-8 bg-[#1e243e]"></div>
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-white">15+</span>
+                <span className="text-2xl font-bold text-white">10+</span>
                 <span className="text-[#b9c3e6] text-sm">
                   Projects Completed
                 </span>
@@ -139,48 +154,39 @@ const Hero = () => {
               <div className="flex gap-4 ml-auto lg:ml-0">
                 {/* GitHub */}
                 <a
-                  href="https://github.com/huzaifa"
+                  href="https://github.com/mhuzaifa360"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
                 >
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                  </svg>
+                  <FaGithub />
                 </a>
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/huzaifa"
+                  href="https://www.linkedin.com/in/muhammad-huzaifa-%E2%9C%94%EF%B8%8F-0b617125b/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
                 >
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
+                  <FaLinkedin />
                 </a>
-                {/* Twitter */}
+                {/* Youtube */}
                 <a
-                  href="https://twitter.com/huzaifa"
+                  href="https://youtube.com/@techbyhuzaifa360?si=lSqTxhjsV5vq0Y2t"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
                 >
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 0021.968-11.87c0-.213-.005-.426-.015-.637a9.987 9.987 0 002.457-2.539l-.002-.003z" />
-                  </svg>
+                  <FaYoutube />
+                </a>
+                {/* Download Resume */}
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1X5JZ1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
+                >
+                  <MdOutlineFileDownload />
                 </a>
               </div>
             </div>
@@ -226,19 +232,35 @@ const Hero = () => {
                 {/* Tech Stack Icons */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">⚛️</span>
+                    <span className="text-2xl">
+                      <img src={reactIcon} alt="React" className="w-8 h-8" />
+                    </span>
                     <span className="text-sm text-[#cdd9ff]">React</span>
                   </div>
                   <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">🍃</span>
+                    <span className="text-2xl">
+                      <img
+                        src={mongodbIcon}
+                        alt="MongoDB"
+                        className="w-8 h-8"
+                      />
+                    </span>
                     <span className="text-sm text-[#cdd9ff]">MongoDB</span>
                   </div>
                   <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">🚀</span>
+                    <span className="text-2xl">
+                      <img
+                        src={expressIcon}
+                        alt="Express"
+                        className="w-8 h-8"
+                      />
+                    </span>
                     <span className="text-sm text-[#cdd9ff]">Express</span>
                   </div>
                   <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">💚</span>
+                    <span className="text-2xl">
+                      <img src={nodejsIcon} alt="Node.js" className="w-8 h-8" />
+                    </span>
                     <span className="text-sm text-[#cdd9ff]">Node.js</span>
                   </div>
                 </div>
