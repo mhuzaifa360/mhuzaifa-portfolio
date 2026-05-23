@@ -1,9 +1,12 @@
 // src/components/Resume.jsx
 import { useState, useEffect } from "react";
-
+// Importing icons
+import { MdOutlineFileDownload } from "react-icons/md";
+// Importing data
 import certifications from "./constant/certifications";
 import experience from "./constant/experience";
 import education from "./constant/education";
+import { huzaifaInfo } from "./constant/huzaifaInfo";
 
 const Resume = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,28 +39,6 @@ const Resume = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* Download Resume Button */}
-        <div className="flex justify-center mb-12">
-          <a
-            href="#"
-            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold hover:from-[#2c3fe0] hover:to-[#4a5de0] transition-all hover:scale-105 shadow-lg shadow-[#3b4eff]/20"
-          >
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-            Download Full Resume (PDF)
-          </a>
-        </div>
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* LEFT SIDE - Experience */}
