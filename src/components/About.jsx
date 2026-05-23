@@ -7,6 +7,8 @@ import mapIcon from '../assets/icons/icons8-address-100.png';
 import dateIcon from '../assets/icons/icons8-date-100.png';
 import mailIcon from '../assets/icons/icons8-mail-100.png';
 
+import { huzaifaInfo } from "./constant/huzaifaInfo";
+
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -75,25 +77,25 @@ const About = () => {
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
                     <span className="text-2xl block mb-1"><img src={mapIcon} alt="Location" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Based in</p>
-                    <p className="text-white text-sm font-semibold">Rahatabad,Peshawar, Pakistan</p>
+                    <p className="text-white text-sm font-semibold">{huzaifaInfo.personalInfo.address}</p>
                   </div>
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
                     <span className="text-2xl block mb-1"><img src={dateIcon} alt="Birthday" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Birthday</p>
-                    <p className="text-white text-sm font-semibold">2002</p>
+                    <p className="text-white text-sm font-semibold">{huzaifaInfo.personalInfo.birthday}</p>
                   </div>
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
                     <span className="text-2xl block mb-1"><img src={mailIcon} alt="Email" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Email</p>
                     <p className="text-white text-sm font-semibold truncate">
-                      mhuzaifa3128352877@gmail.com
+                      {huzaifaInfo.personalInfo.email}
                     </p>
                   </div>
                   <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
                     <span className="text-2xl block mb-1"><img src={workIcon} alt="Available" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Available</p>
                     <p className="text-green-400 text-sm font-semibold">
-                      For Remote/Local job
+                      {huzaifaInfo.personalInfo.availability}
                     </p>
                   </div>
                 </div>
