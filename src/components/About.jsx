@@ -2,6 +2,10 @@
 import { useState, useEffect } from "react";
 // About.jsx ke top pe
 import profilePic from "../assets/images/huzaifa.jpg";
+import workIcon from '../assets/icons/icons8-work-100.png';
+import mapIcon from '../assets/icons/icons8-address-100.png';
+import dateIcon from '../assets/icons/icons8-date-100.png';
+import mailIcon from '../assets/icons/icons8-mail-100.png';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,11 +57,6 @@ const About = () => {
                 {/* Picture Container */}
                 <div className="relative mb-6">
                   <div className="w-48 h-48 md:w-64 md:h-64 mx-auto rounded-full overflow-hidden border-4 border-[#3b4eff]/50 shadow-xl">
-                    {/* 
-                      ⭐ YAHAN APNI PICTURE DALEN ⭐
-                      Replace "your-photo.jpg" with your actual image path
-                      Image rakhen: src/assets/images/huzaifa.jpg
-                    */}
                     <img
                       src={profilePic}
                       alt="Huzaifa"
@@ -73,28 +72,28 @@ const About = () => {
 
                 {/* Quick Info Cards */}
                 <div className="grid grid-cols-2 gap-3 mb-6">
-                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1">📍</span>
+                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
+                    <span className="text-2xl block mb-1"><img src={mapIcon} alt="Location" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Based in</p>
-                    <p className="text-white text-sm font-semibold">Pakistan</p>
+                    <p className="text-white text-sm font-semibold">Rahatabad,Peshawar, Pakistan</p>
                   </div>
-                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1">🎂</span>
+                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
+                    <span className="text-2xl block mb-1"><img src={dateIcon} alt="Birthday" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Birthday</p>
-                    <p className="text-white text-sm font-semibold">1998</p>
+                    <p className="text-white text-sm font-semibold">2002</p>
                   </div>
-                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1">📧</span>
+                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
+                    <span className="text-2xl block mb-1"><img src={mailIcon} alt="Email" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Email</p>
                     <p className="text-white text-sm font-semibold truncate">
-                      huzaifa@example.com
+                      mhuzaifa3128352877@gmail.com
                     </p>
                   </div>
-                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
-                    <span className="text-2xl block mb-1">💼</span>
+                  <div className="bg-[#1a1f36]/50 p-3 rounded-xl flex flex-col items-center text-center border border-[#2a3150] hover:border-[#3b4eff]/50 transition-all">
+                    <span className="text-2xl block mb-1"><img src={workIcon} alt="Available" width={40}/></span>
                     <p className="text-[#b9c3e6] text-xs">Available</p>
                     <p className="text-green-400 text-sm font-semibold">
-                      Freelance
+                      For Remote/Local job
                     </p>
                   </div>
                 </div>
