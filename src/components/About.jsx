@@ -175,7 +175,7 @@ const About = () => {
                 <div>
                   <p className="text-white font-semibold">Experience</p>
                   <p className="text-[#b9c3e6] text-sm">
-                    2+ Years Professional
+                    {huzaifaInfo.stats.yearsOfExperience} Months Experience
                   </p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Projects</p>
-                  <p className="text-[#b9c3e6] text-sm">15+ Completed</p>
+                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.stats.projectsCompleted} Completed</p>
                 </div>
               </div>
 
@@ -220,7 +220,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Email</p>
-                  <p className="text-[#b9c3e6] text-sm">huzaifa@example.com</p>
+                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.email}</p>
                 </div>
               </div>
 
@@ -248,7 +248,7 @@ const About = () => {
                 </div>
                 <div>
                   <p className="text-white font-semibold">Location</p>
-                  <p className="text-[#b9c3e6] text-sm">Pakistan</p>
+                  <p className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.address}</p>
                 </div>
               </div>
             </div>

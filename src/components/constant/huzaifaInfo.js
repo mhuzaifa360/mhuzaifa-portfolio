@@ -76,6 +76,8 @@ export const huzaifaInfo = {
     projectsCompleted: "10+",
     specialization: "Full Stack Web Development",
     experienceLevel: "Intermediate",
+    yearsOfExperience: "6+",
+
   },
 
   socialLinks: {
