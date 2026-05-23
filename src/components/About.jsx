@@ -54,7 +54,7 @@ const About = () => {
               {/* Animated Border Glow */}
               <div className="absolute -inset-1 bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
 
-              {/* Main Card */}
+              {/* Main Card - Left container */}
               <div className="relative bg-gradient-to-br from-[#0f1222] to-[#0a0c12] rounded-3xl p-6 border border-[#262b44] shadow-2xl">
                 {/* Picture Container */}
                 <div className="relative mb-6">

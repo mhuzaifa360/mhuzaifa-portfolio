@@ -180,15 +180,13 @@ const Hero = () => {
                   <FaYoutube />
                 </a>
                 {/* Download Resume */}
-                 {/* Download CV Button */}
-            <a
-              href={huzaifaInfo.socialLinks.resume}
-              download="Muhammad_Huzaifa_Resume.pdf"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold text-md hover:from-[#2c3fe0] hover:to-[#4a5de0] shadow-lg shadow-[#3b4eff]/20 transition-all duration-200 hover:scale-105"
-            >
-              <MdOutlineFileDownload className="text-[20px]"/>
-              Download CV
-            </a>
+                <a
+                  href={huzaifaInfo.socialLinks.resume}
+            download="Muhammad_Huzaifa_Resume.pdf"
+                  className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200 link"
+                >
+                  <MdOutlineFileDownload />
+                </a>
               </div>
             </div>
           </div>
