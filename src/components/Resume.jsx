@@ -45,18 +45,6 @@ const Resume = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] mx-auto mt-4 rounded-full"></div>
         </div>
 
-        {/* DOWNLOAD BUTTON */}
-        <div className="flex justify-center mb-14">
-          <a
-            href={huzaifaInfo.socialLinks.resume}
-            download="Muhammad_Huzaifa_Resume.pdf"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white font-semibold text-md hover:from-[#2c3fe0] hover:to-[#4a5de0] shadow-lg shadow-[#3b4eff]/20 transition-all duration-300 hover:scale-105"
-          >
-            <MdOutlineFileDownload className="text-[22px]" />
-            Download Resume
-          </a>
-        </div>
-
         {/* MAIN GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
@@ -131,7 +119,7 @@ const Resume = () => {
                     <div className="bg-gradient-to-r from-[#0f1222] to-transparent p-5 rounded-3xl border border-[#262b44] hover:border-[#3b4eff]/50 transition-all duration-300">
 
                       <div className="flex items-center gap-3 mb-2">
-                        <span className="text-3xl">{exp.icon}</span>
+                        <img src={exp.icon} alt={exp.title} width="40px"/>
 
                         <h4 className="text-lg md:text-xl font-bold text-white">
                           {exp.title}

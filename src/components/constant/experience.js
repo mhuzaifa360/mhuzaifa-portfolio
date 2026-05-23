@@ -1,38 +1,16 @@
+import wordpressIcon from "../../assets/icons/icons8-wordpress-100.png";
 
-
-  const experience = [
-    {
-      title: "MERN Stack Developer",
-      company: "Tech Solutions Inc.",
-      year: "2023 - Present",
-      description: [
-        "Building scalable web applications using MERN stack",
-        "Collaborating with cross-functional teams to deliver features",
-        "Optimizing application performance and implementing best practices",
-      ],
-      icon: "💼",
-    },
-    {
-      title: "Frontend Developer Intern",
-      company: "WebCraft Agency",
-      year: "2022 - 2023",
-      description: [
-        "Developed responsive UI components using React and Tailwind",
-        "Integrated REST APIs and managed state using Redux",
-        "Participated in code reviews and team meetings",
-      ],
-      icon: "🚀",
-    },
-    {
-      title: "Freelance Web Developer",
-      company: "Self-employed",
-      year: "2021 - Present",
-      description: [
-        "Delivered 15+ custom web solutions for clients worldwide",
-        "Managed full project lifecycle from requirements to deployment",
-        "Provided ongoing maintenance and support",
-      ],
-      icon: "✨",
-    },
-  ];
-  export default experience;
+const experience = [
+  {
+    title: "WordPress Developer (sofanest.co.uk)",
+    company: "Freelance",
+    year: "Aug 2025 - Present",
+    description: [
+      "Designed and developed modern responsive websites using WordPress and Elementor.",
+      "Customized layouts, sections, and UI components to create professional business websites.",
+      "Optimized website performance, responsiveness, and user experience across all devices.",
+    ],
+    icon: wordpressIcon,
+  },
+];
+export default experience;
