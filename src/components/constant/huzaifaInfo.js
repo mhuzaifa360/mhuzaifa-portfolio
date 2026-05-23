@@ -1,3 +1,12 @@
+// Importing icons for tech stack
+import reactIcon from "../../assets/icons/icons8-react-js-100.png";
+import mongodbIcon from "../../assets/icons/icons8-mongodb-100.png";
+import expressIcon from "../../assets/icons/icons8-express-js-100.png";
+import nodejsIcon from "../../assets/icons/icons8-node-js-100.png";
+import msOfficeIcon from "../../assets/icons/icons8-ms-office-100.png";
+import tailwindIcon from "../../assets/icons/icons8-tailwind-css-100.png";
+import mysqlIcon from "../../assets/icons/icons8-my-sql-100.png";
+
 export const huzaifaInfo = {
 
     // Updated personal info with more details and a professional bio
@@ -107,6 +116,15 @@ export const huzaifaInfo = {
     "CORS",
     "Multer",
   ],
+  technicalSkills : [
+      { name: "React.js", level: 90, icon: reactIcon, color: "#61DAFB" },
+      { name: "Node.js", level: 85, icon: nodejsIcon, color: "#68A063" },
+      { name: "MongoDB", level: 85, icon: mongodbIcon, color: "#47A248" },
+      { name: "Express.js", level: 80, icon: expressIcon, color: "#000000" },
+      { name: "MS Office", level: 92, icon: msOfficeIcon, color: "#F7DF1E" },
+      { name: "Tailwind CSS", level: 88, icon: tailwindIcon, color: "#06B6D4" },
+      { name: "MySQL", level: 88, icon: mysqlIcon, color: "#F7DF1E" },
+    ],
   // Updated projects with more realistic descriptions and technologies
   projects: [
     {

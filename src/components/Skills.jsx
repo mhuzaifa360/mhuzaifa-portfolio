@@ -3,34 +3,12 @@ import { useState, useEffect } from "react";
 
 import { huzaifaInfo } from "./constant/huzaifaInfo";
 
-// Importing icons for tech stack
-import reactIcon from "../assets/icons/icons8-react-js-100.png";
-import mongodbIcon from "../assets/icons/icons8-mongodb-100.png";
-import expressIcon from "../assets/icons/icons8-express-js-100.png";
-import nodejsIcon from "../assets/icons/icons8-node-js-100.png";
-import msOfficeIcon from "../assets/icons/icons8-ms-office-100.png";
-import tailwindIcon from "../assets/icons/icons8-tailwind-css-100.png";
-import mysqlIcon from "../assets/icons/icons8-my-sql-100.png";
-
-
-
-
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const technicalSkills = [
-    { name: "React.js", level: 90, icon: reactIcon, color: "#61DAFB" },
-    { name: "Node.js", level: 85, icon: nodejsIcon, color: "#68A063" },
-    { name: "MongoDB", level: 85, icon: mongodbIcon, color: "#47A248" },
-    { name: "Express.js", level: 80, icon: expressIcon, color: "#000000" },
-    { name: "MS Office", level: 92, icon: msOfficeIcon, color: "#F7DF1E" },
-    { name: "Tailwind CSS", level: 88, icon: tailwindIcon, color: "#06B6D4" },
-    { name: "MySQL", level: 88, icon: mysqlIcon, color: "#F7DF1E" },
-  ];
 
   const softSkills = [
     "💡 Problem Solving",
@@ -42,7 +20,10 @@ const Skills = () => {
   ];
 
   return (
-    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden" id="skills">
+    <section
+      className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden"
+      id="skills"
+    >
       {/* Background Effects */}
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-[#5f72ee]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/4 left-0 w-80 h-80 bg-[#3b4eff]/5 rounded-full blur-3xl"></div>
@@ -79,11 +60,15 @@ const Skills = () => {
               <span className="text-3xl">💻</span> Technical Skills
             </h3>
             <div className="space-y-6">
-              {technicalSkills.map((skill, index) => (
+              {huzaifaInfo.technicalSkills.map((skill, index) => (
                 <div key={index} className="group">
                   <div className="flex justify-between items-center mb-2">
                     <div className="flex items-center gap-2">
-                      <img src={skill.icon} alt={skill.name} className="w-6 h-6" />
+                      <img
+                        src={skill.icon}
+                        alt={skill.name}
+                        className="w-6 h-6"
+                      />
                       <span className="text-[#cdd9ff] font-semibold">
                         {skill.name}
                       </span>
