@@ -11,6 +11,7 @@ import reactIcon from "../assets/icons/icons8-react-js-100.png";
 import mongodbIcon from "../assets/icons/icons8-mongodb-100.png";
 import expressIcon from "../assets/icons/icons8-express-js-100.png";
 import nodejsIcon from "../assets/icons/icons8-node-js-100.png";
+import { huzaifaInfo } from "./constant/huzaifaInfo";
 
 const Hero = () => {
   // Hero animation state
@@ -49,17 +50,17 @@ const Hero = () => {
                 Hi, I'm
               </span>
               <span className="bg-gradient-to-r from-white via-[#8b9dff] to-[#5f7cff] bg-clip-text text-transparent animate-gradient">
-                Muhammad Huzaifa
+                {huzaifaInfo.personalInfo.fullName}
               </span>
             </h1>
 
             {/* Role Badges */}
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-5">
               <span className="px-4 py-2 bg-[#1a1f36] rounded-full text-[#7e8eff] font-semibold text-sm border border-[#2a3150] backdrop-blur-sm">
-                🚀 MERN Stack Developer
+                🚀 {huzaifaInfo.stats.specialization}
               </span>
               <span className="px-4 py-2 bg-[#1a1f36] rounded-full text-[#7e8eff] font-semibold text-sm border border-[#2a3150] backdrop-blur-sm">
-                💻 Full Stack Expert
+                💻 MERN Stack Development
               </span>
             </div>
 
@@ -85,10 +86,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-[#b9c3e6] text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-8">
-              I build modern, responsive and user-friendly web applications with
-              clean code, smooth UI, and powerful functionality. Passionate
-              about creating real-world projects and improving my full stack
-              development skills every day.
+              {huzaifaInfo.personalInfo.bio}
             </p>
 
             {/* CTA Buttons */}
@@ -127,9 +125,7 @@ const Hero = () => {
                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                   />
                 </svg>
-                <a
-                  href="mailto:mhuzaifa3128352877@gmail.com?subject=Project Inquiry&body=Hello Muhammad Huzaifa,"
-                >
+                <a href="mailto:mhuzaifa3128352877@gmail.com?subject=Project Inquiry&body=Hello Muhammad Huzaifa,">
                   Contact Me
                 </a>
               </button>
@@ -138,14 +134,18 @@ const Hero = () => {
             {/* Stats / Social Icons */}
             <div className="flex flex-wrap items-center gap-6 justify-center lg:justify-start mt-10 pt-6 border-t border-[#1e243e]">
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-white">6+</span>
+                <span className="text-2xl font-bold text-white">
+                  {huzaifaInfo.stats.yearsOfExperience}
+                </span>
                 <span className="text-[#b9c3e6] text-sm">
                   Months Experience
                 </span>
               </div>
               <div className="w-px h-8 bg-[#1e243e]"></div>
               <div className="flex items-center gap-3">
-                <span className="text-2xl font-bold text-white">10+</span>
+                <span className="text-2xl font-bold text-white">
+                  {huzaifaInfo.stats.projectsCompleted}
+                </span>
                 <span className="text-[#b9c3e6] text-sm">
                   Projects Completed
                 </span>
@@ -154,7 +154,7 @@ const Hero = () => {
               <div className="flex gap-4 ml-auto lg:ml-0">
                 {/* GitHub */}
                 <a
-                  href="https://github.com/mhuzaifa360"
+                  href={huzaifaInfo.socialLinks.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
@@ -163,7 +163,7 @@ const Hero = () => {
                 </a>
                 {/* LinkedIn */}
                 <a
-                  href="https://www.linkedin.com/in/muhammad-huzaifa-%E2%9C%94%EF%B8%8F-0b617125b/"
+                  href={huzaifaInfo.socialLinks.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
@@ -172,7 +172,7 @@ const Hero = () => {
                 </a>
                 {/* Youtube */}
                 <a
-                  href="https://youtube.com/@techbyhuzaifa360?si=lSqTxhjsV5vq0Y2t"
+                  href={huzaifaInfo.socialLinks.youtube}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
@@ -181,9 +181,8 @@ const Hero = () => {
                 </a>
                 {/* Download Resume */}
                 <a
-                  href="https://drive.google.com/uc?export=download&id=1X5JZ1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1Z1"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={huzaifaInfo.socialLinks.resume}
+                  download="Muhammad_Huzaifa_Resume.pdf"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200"
                 >
                   <MdOutlineFileDownload />

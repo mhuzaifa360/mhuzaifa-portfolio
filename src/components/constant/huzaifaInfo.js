@@ -1,5 +1,6 @@
 export const huzaifaInfo = {
 
+    // Updated personal info with more details and a professional bio
   personalInfo: {
     firstName: "Muhammad",
     lastName: "Huzaifa",
@@ -15,6 +16,7 @@ export const huzaifaInfo = {
     availability: "Freelance | Remote Work | Local Opportunities",
   },
 
+  // Updated education with more relevant details and formatting
   education: [
     {
       institute: "University of Agriculture Peshawar",
@@ -30,6 +32,7 @@ export const huzaifaInfo = {
     },
   ],
 
+  // Updated skills with more relevant technologies and soft skills
   skills: {
     frontend: [
       "React.js",
@@ -80,12 +83,15 @@ export const huzaifaInfo = {
 
   },
 
+  // Updated social links with actual URLs and resume path
   socialLinks: {
     github: "https://github.com/mhuzaifa360",
     linkedin: "https://www.linkedin.com/in/muhammad-huzaifa-%E2%9C%94%EF%B8%8F-0b617125b/",
     youtube: "https://youtube.com/@techbyhuzaifa360?si=Gd-I7mVJucEcQcyS",
+    resume: "/Huzaifa_Resume.pdf",
   },
 
+  // Updated projects with more realistic descriptions and technologies
   projects: [
     {
       title: "Portfolio Website",
