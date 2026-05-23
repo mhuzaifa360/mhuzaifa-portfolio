@@ -7,6 +7,8 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import certifications from "./constant/certifications";
 import experience from "./constant/experience";
 import education from "./constant/education";
+import certificateIcon  from "../assets/icons/icons8-certificate-100.png";
+import experienceIcon from "../assets/icons/icons8-experience-100.png";
 import { huzaifaInfo } from "./constant/huzaifaInfo";
 
 const Resume = () => {
@@ -102,7 +104,7 @@ const Resume = () => {
 
             {/* EXPERIENCE */}
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-3xl">💼</span>
+              <img src={experienceIcon} alt="Experience" width="40px" />
               Experience
             </h3>
 
@@ -157,7 +159,7 @@ const Resume = () => {
 
             {/* CERTIFICATIONS */}
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-              <span className="text-3xl">🏆</span>
+              <img src={certificateIcon} alt="Certifications" width="40px" />
               Certifications
             </h3>
 
@@ -168,7 +170,7 @@ const Resume = () => {
                   className="flex items-center gap-4 bg-[#0f1222] p-4 rounded-2xl border border-[#262b44] hover:border-[#5f7cff] transition-all duration-300 hover:translate-y-[-3px]"
                 >
                   <span className="text-3xl">
-                    {cert.icon}
+                    <img src={cert.icon} alt={cert.name} width="40px" />
                   </span>
 
                   <div className="flex-1">
@@ -177,7 +179,7 @@ const Resume = () => {
                     </p>
 
                     <p className="text-[#7e8eff] text-xs">
-                      {cert.year}
+                      {cert.description}
                     </p>
                   </div>
                 </div>

@@ -217,13 +217,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center">
-          <p className="text-[#7e8eff] text-sm">
-            © {year} M Huzaifa. All rights reserved. Built with
-            <span className="text-red-500 mx-1">❤️</span>
-            using React & Tailwind CSS
-          </p>
-          <p className="text-[#7e8eff] text-xs mt-2">
-            Code. Build. Deploy. Repeat.
+          <p className="text-[#7e8eff] text-md">
+            © {year} Muhammad Huzaifa. All Rights Reserved.
           </p>
         </div>
       </div>
