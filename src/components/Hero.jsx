@@ -283,7 +283,7 @@ const Hero = () => {
                 <div className="text-center">
                   <p className="text-[#b9c3e6] text-xs sm:text-sm italic">
                     "Code. Build. Deploy. Repeat."
-                  </p>
+                  </p> 
                   <div className="flex items-center justify-center gap-1 sm:gap-2 mt-2 sm:mt-3">
                     <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-pulse"></span>
                     <span className="text-[10px] sm:text-xs text-[#7e8eff]">
