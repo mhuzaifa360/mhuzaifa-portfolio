@@ -1,5 +1,12 @@
 // src/components/Footer.jsx
 import { useState, useEffect } from "react";
+import { quickLinks, services, socialLinks } from "./constant/footer";
+import {navLinks} from "./constant/navLinks";
+import {huzaifaInfo} from "./constant/huzaifaInfo";
+
+import addressIcon from "../assets/icons/icons8-address-100.png";
+import emailIcon from "../assets/icons/icons8-mail-100.png";
+import phoneIcon from "../assets/icons/icons8-phone-100.png";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -9,63 +16,7 @@ const Footer = () => {
     setIsVisible(true);
   }, []);
 
-  const quickLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Resume", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Contact", href: "#" },
-  ];
-
-  const services = [
-    "Web Development",
-    "MERN Stack Solutions",
-    "Responsive Design",
-    "API Integration",
-    "Performance Optimization",
-    "Technical Consulting",
-  ];
-
-  const socialLinks = [
-    {
-      name: "GitHub",
-      icon: "💻",
-      url: "https://github.com/huzaifa",
-      color: "hover:text-gray-300",
-    },
-    {
-      name: "LinkedIn",
-      icon: "🔗",
-      url: "https://linkedin.com/in/huzaifa",
-      color: "hover:text-blue-400",
-    },
-    {
-      name: "Twitter",
-      icon: "🐦",
-      url: "https://twitter.com/huzaifa",
-      color: "hover:text-sky-400",
-    },
-    {
-      name: "Instagram",
-      icon: "📸",
-      url: "https://instagram.com/huzaifa",
-      color: "hover:text-pink-500",
-    },
-    {
-      name: "Facebook",
-      icon: "📘",
-      url: "https://facebook.com/huzaifa",
-      color: "hover:text-blue-600",
-    },
-    {
-      name: "YouTube",
-      icon: "📺",
-      url: "https://youtube.com/@huzaifa",
-      color: "hover:text-red-600",
-    },
-  ];
-
+ 
   return (
     <footer className="bg-gradient-to-b from-[#0a0c12] to-[#05060a] pt-16 pb-8 px-6 md:px-12 relative overflow-hidden">
       {/* Background Glow */}
@@ -107,7 +58,7 @@ const Footer = () => {
           >
             <h4 className="text-white font-bold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {quickLinks.map((link, index) => (
+              {navLinks.map((link, index) => (
                 <li key={index}>
                   <a
                     href={link.href}
@@ -153,26 +104,26 @@ const Footer = () => {
             <h4 className="text-white font-bold text-lg mb-4">Get In Touch</h4>
             <ul className="space-y-3">
               <li className="flex items-center gap-3">
-                <span className="text-[#5f7cff] text-xl">📧</span>
+                <img src={emailIcon} alt="Email Icon" className="w-5 h-5" />
                 <a
                   href="mailto:huzaifa@example.com"
                   className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
                 >
-                  huzaifa@example.com
+                  {huzaifaInfo.personalInfo.email}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#5f7cff] text-xl">📱</span>
+                <img src={phoneIcon} alt="Phone Icon" className="w-5 h-5" />
                 <a
                   href="tel:+923001234567"
                   className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
                 >
-                  +92 300 1234567
+                  {huzaifaInfo.personalInfo.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-[#5f7cff] text-xl">📍</span>
-                <span className="text-[#b9c3e6] text-sm">Lahore, Pakistan</span>
+                <img src={addressIcon} alt="Address Icon" className="w-5 h-5" />
+                <span className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.address}</span>
               </li>
             </ul>
           </div>
