@@ -1,14 +1,12 @@
 // import huzaifaInfo from "../constant/huzaifaInfo";
+import {huzaifaInfo} from "./huzaifaInfo";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { GrDownload } from "react-icons/gr";
 
-// Quick Links for Footer
-export const quickLinks = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Resume", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Contact", href: "#" },
-];
+
+
 
 // Services Offered
 export const services = [
@@ -18,45 +16,32 @@ export const services = [
   "Backend Development (Node.js, Express.js)",
   "WordPress Development (Elementor)",
   "MS Office Services (Word, Excel, PowerPoint)",
-  "Website Deployment & Hosting",
 ];
 
 // Social Media Links
 export const socialLinks = [
   {
     name: "GitHub",
-    icon: "💻",
-    url: "https://github.com/huzaifa",
+    icon: FaGithub ,
+    url: huzaifaInfo.socialLinks.github,
     color: "hover:text-gray-300",
   },
   {
     name: "LinkedIn",
-    icon: "🔗",
-    url: "https://linkedin.com/in/huzaifa",
+    icon: FaLinkedin ,
+    url: huzaifaInfo.socialLinks.linkedin,
     color: "hover:text-blue-400",
   },
   {
-    name: "Twitter",
-    icon: "🐦",
-    url: "https://twitter.com/huzaifa",
-    color: "hover:text-sky-400",
-  },
-  {
-    name: "Instagram",
-    icon: "📸",
-    url: "https://instagram.com/huzaifa",
-    color: "hover:text-pink-500",
-  },
-  {
-    name: "Facebook",
-    icon: "📘",
-    url: "https://facebook.com/huzaifa",
-    color: "hover:text-blue-600",
-  },
-  {
     name: "YouTube",
-    icon: "📺",
-    url: "https://youtube.com/@huzaifa",
+    icon: FaYoutube ,
+    url: huzaifaInfo.socialLinks.youtube,
     color: "hover:text-red-600",
+  },
+    {
+    name: "Resume",
+    icon: GrDownload ,
+    url: huzaifaInfo.socialLinks.resume,
+    color: "hover:text-green-400",
   },
 ];

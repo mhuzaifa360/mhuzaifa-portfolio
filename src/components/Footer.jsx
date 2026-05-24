@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import { useState, useEffect } from "react";
-import { quickLinks, services, socialLinks } from "./constant/footer";
+import { services, socialLinks } from "./constant/footer";
 import {navLinks} from "./constant/navLinks";
 import {huzaifaInfo} from "./constant/huzaifaInfo";
 
@@ -138,7 +138,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             {/* Social Links */}
             <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
+              {socialLinks.map((social, index) => {
+                const Icon = social.icon;
+                return (
                 <a
                   key={index}
                   href={social.url}
@@ -147,9 +149,9 @@ const Footer = () => {
                   className={`w-10 h-10 rounded-full bg-[#1a1f36] flex items-center justify-center text-xl ${social.color} hover:scale-110 transition-all duration-300 border border-[#2a3150] hover:border-[#5f7cff]`}
                   title={social.name}
                 >
-                  {social.icon}
+                  <Icon className="text-white"/>
                 </a>
-              ))}
+              )})}
             </div>
 
             {/* Newsletter Signup */}

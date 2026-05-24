@@ -125,38 +125,5 @@ export const huzaifaInfo = {
       { name: "Tailwind CSS", level: 88, icon: tailwindIcon, color: "#06B6D4" },
       { name: "MySQL", level: 88, icon: mysqlIcon, color: "#F7DF1E" },
     ],
-  // Updated projects with more realistic descriptions and technologies
-  projects: [
-    {
-      title: "Portfolio Website",
-      category: "Frontend",
-      technologies: ["React.js", "Tailwind CSS", "Framer Motion"],
-      description:
-        "Modern responsive portfolio website with animations and premium UI.",
-    },
-
-    {
-      title: "Teacher Management System",
-      category: "Full Stack",
-      technologies: ["React.js", "Node.js", "Express.js", "MySQL"],
-      description:
-        "Full stack teacher management platform with authentication and dashboard.",
-    },
-
-    {
-      title: "Job Portal",
-      category: "Full Stack",
-      technologies: ["React.js", "Node.js", "MySQL"],
-      description:
-        "Online job portal with search, filtering, and application system.",
-    },
-
-    {
-      title: "Course Platform",
-      category: "Frontend",
-      technologies: ["React.js", "Tailwind CSS"],
-      description:
-        "Responsive online learning platform UI with modern design.",
-    },
-  ],
+  
 };
