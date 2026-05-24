@@ -98,6 +98,9 @@ export const huzaifaInfo = {
     linkedin: "https://www.linkedin.com/in/muhammad-huzaifa-%E2%9C%94%EF%B8%8F-0b617125b/",
     youtube: "https://youtube.com/@techbyhuzaifa360?si=Gd-I7mVJucEcQcyS",
     resume: "/Huzaifa_Resume.pdf",
+    phone: "tel:+923128352877",
+    email: "mailto:mhuzaifa3128352877@gmail.com",
+    whatsapp: "https://wa.me/923128352877",
   },
 
   toolsAndTechnologies: [
