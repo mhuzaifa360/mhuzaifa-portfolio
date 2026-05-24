@@ -182,7 +182,7 @@ const Hero = () => {
                 {/* Download Resume */}
                 <a
                   href={huzaifaInfo.socialLinks.resume}
-            download="Muhammad_Huzaifa_Resume.pdf"
+                  download="Muhammad_Huzaifa_Resume.pdf"
                   className="text-[#cdd9ff] hover:text-[#5f7cff] transition-all hover:scale-110 transform duration-200 link"
                 >
                   <MdOutlineFileDownload />
@@ -191,7 +191,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right preview card */}
+          {/* Right preview card - FIXED RESPONSIVE ICONS */}
           <div
             className={`flex-1 flex justify-center items-center transition-all duration-1000 delay-300 transform ${
               isVisible
@@ -203,17 +203,17 @@ const Hero = () => {
               {/* Animated Background Glow */}
               <div className="absolute inset-0 bg-gradient-to-r from-[#3b4eff]/20 to-[#5f72ee]/20 rounded-full blur-3xl animate-pulse"></div>
 
-              {/* Main Card */}
-              <div className="relative bg-gradient-to-br from-[#0f1222] to-[#0a0c12] rounded-3xl p-8 border border-[#262b44] shadow-2xl backdrop-blur-sm w-72 md:w-96 animate-float">
+              {/* Main Card - Responsive width */}
+              <div className="relative bg-gradient-to-br from-[#0f1222] to-[#0a0c12] rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 border border-[#262b44] shadow-2xl backdrop-blur-sm w-64 sm:w-72 md:w-96 animate-float">
                 {/* Decorative Elements */}
-                <div className="absolute -top-3 -right-3 w-20 h-20 bg-[#3b4eff]/10 rounded-full blur-xl"></div>
-                <div className="absolute -bottom-3 -left-3 w-20 h-20 bg-[#5f72ee]/10 rounded-full blur-xl"></div>
+                <div className="absolute -top-3 -right-3 w-16 h-16 sm:w-20 sm:h-20 bg-[#3b4eff]/10 rounded-full blur-xl"></div>
+                <div className="absolute -bottom-3 -left-3 w-16 h-16 sm:w-20 sm:h-20 bg-[#5f72ee]/10 rounded-full blur-xl"></div>
 
                 {/* Code Icon */}
-                <div className="text-center mb-6">
-                  <div className="inline-block p-4 bg-[#1a1f36] rounded-2xl border border-[#3b4eff]/30">
+                <div className="text-center mb-4 sm:mb-6">
+                  <div className="inline-block p-3 sm:p-4 bg-[#1a1f36] rounded-xl sm:rounded-2xl border border-[#3b4eff]/30">
                     <svg
-                      className="w-16 h-16 text-[#5f7cff] animate-pulse"
+                      className="w-12 h-12 sm:w-16 sm:h-16 text-[#5f7cff] animate-pulse"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -228,50 +228,65 @@ const Hero = () => {
                   </div>
                 </div>
 
-                {/* Tech Stack Icons */}
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">
-                      <img src={reactIcon} alt="React" className="w-8 h-8" />
-                    </span>
-                    <span className="text-sm text-[#cdd9ff]">React</span>
-                  </div>
-                  <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">
-                      <img
-                        src={mongodbIcon}
-                        alt="MongoDB"
-                        className="w-8 h-8"
+                {/* Tech Stack Icons - FIXED: No stretching on mobile */}
+                <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6">
+                  {/* React */}
+                  <div className="flex items-center gap-2 sm:gap-3 bg-[#1a1f36]/50 p-2 sm:p-3 rounded-lg sm:rounded-xl border border-[#2a3150]">
+                    <span className="flex-shrink-0">
+                      <img 
+                        src={reactIcon} 
+                        alt="React" 
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" 
                       />
                     </span>
-                    <span className="text-sm text-[#cdd9ff]">MongoDB</span>
+                    <span className="text-xs sm:text-sm text-[#cdd9ff] truncate">React</span>
                   </div>
-                  <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">
-                      <img
-                        src={expressIcon}
-                        alt="Express"
-                        className="w-8 h-8"
+                  
+                  {/* MongoDB */}
+                  <div className="flex items-center gap-2 sm:gap-3 bg-[#1a1f36]/50 p-2 sm:p-3 rounded-lg sm:rounded-xl border border-[#2a3150]">
+                    <span className="flex-shrink-0">
+                      <img 
+                        src={mongodbIcon} 
+                        alt="MongoDB" 
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" 
                       />
                     </span>
-                    <span className="text-sm text-[#cdd9ff]">Express</span>
+                    <span className="text-xs sm:text-sm text-[#cdd9ff] truncate">MongoDB</span>
                   </div>
-                  <div className="flex items-center gap-3 bg-[#1a1f36]/50 p-3 rounded-xl border border-[#2a3150]">
-                    <span className="text-2xl">
-                      <img src={nodejsIcon} alt="Node.js" className="w-8 h-8" />
+                  
+                  {/* Express */}
+                  <div className="flex items-center gap-2 sm:gap-3 bg-[#1a1f36]/50 p-2 sm:p-3 rounded-lg sm:rounded-xl border border-[#2a3150]">
+                    <span className="flex-shrink-0">
+                      <img 
+                        src={expressIcon} 
+                        alt="Express" 
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" 
+                      />
                     </span>
-                    <span className="text-sm text-[#cdd9ff]">Node.js</span>
+                    <span className="text-xs sm:text-sm text-[#cdd9ff] truncate">Express</span>
+                  </div>
+                  
+                  {/* Node.js */}
+                  <div className="flex items-center gap-2 sm:gap-3 bg-[#1a1f36]/50 p-2 sm:p-3 rounded-lg sm:rounded-xl border border-[#2a3150]">
+                    <span className="flex-shrink-0">
+                      <img 
+                        src={nodejsIcon} 
+                        alt="Node.js" 
+                        className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 object-contain" 
+                      />
+                    </span>
+                    <span className="text-xs sm:text-sm text-[#cdd9ff] truncate">Node.js</span>
                   </div>
                 </div>
 
                 {/* Quote */}
                 <div className="text-center">
-                  <p className="text-[#b9c3e6] text-sm italic">
+                  <p className="text-[#b9c3e6] text-xs sm:text-sm italic">
                     "Code. Build. Deploy. Repeat."
                   </p>
-                  <div className="flex items-center justify-center gap-2 mt-3">
-                    <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                    <span className="text-xs text-[#7e8eff]">
+                  <div className="flex items-center justify-center gap-1 sm:gap-2 mt-2 sm:mt-3">
+                    <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span className="text-[10px] sm:text-xs text-[#7e8eff]">
                       Available for work
                     </span>
                   </div>
@@ -279,8 +294,8 @@ const Hero = () => {
               </div>
 
               {/* Floating Elements */}
-              <div className="absolute -top-10 -left-10 w-16 h-16 bg-[#3b4eff]/20 rounded-full blur-xl animate-pulse"></div>
-              <div className="absolute -bottom-10 -right-10 w-24 h-24 bg-[#5f72ee]/20 rounded-full blur-xl animate-pulse delay-1000"></div>
+              <div className="absolute -top-10 -left-10 w-12 h-12 sm:w-16 sm:h-16 bg-[#3b4eff]/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute -bottom-10 -right-10 w-16 h-16 sm:w-24 sm:h-24 bg-[#5f72ee]/20 rounded-full blur-xl animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>
