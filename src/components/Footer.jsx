@@ -103,24 +103,27 @@ const Footer = () => {
           >
             <h4 className="text-white font-bold text-lg mb-4">Get In Touch</h4>
             <ul className="space-y-3">
+              {/* Email */}
               <li className="flex items-center gap-3">
                 <img src={emailIcon} alt="Email Icon" className="w-5 h-5" />
                 <a
-                  href="mailto:huzaifa@example.com"
+                  href="mailto:mhuzaifa3128352877@gmail.com"
                   className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
                 >
                   {huzaifaInfo.personalInfo.email}
                 </a>
               </li>
+              {/* Phone */}
               <li className="flex items-center gap-3">
                 <img src={phoneIcon} alt="Phone Icon" className="w-5 h-5" />
                 <a
-                  href="tel:+923001234567"
+                  href="tel:+923128352877"
                   className="text-[#b9c3e6] hover:text-[#5f7cff] transition-colors text-sm"
                 >
                   {huzaifaInfo.personalInfo.phone}
                 </a>
               </li>
+              {/* Address */}
               <li className="flex items-center gap-3">
                 <img src={addressIcon} alt="Address Icon" className="w-5 h-5" />
                 <span className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.address}</span>
