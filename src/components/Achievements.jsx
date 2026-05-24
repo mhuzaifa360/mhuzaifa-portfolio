@@ -1,6 +1,6 @@
 // src/components/Achievements.jsx
 import { useState, useEffect } from "react";
-import {achievements, stats} from "./constant/achievements";
+import { achievements, stats } from "./constant/achievements";
 
 const Achievements = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,11 +9,11 @@ const Achievements = () => {
     setIsVisible(true);
   }, []);
 
-
-  
-
   return (
-    <section className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden" id="achievements">
+    <section
+      className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden"
+      id="achievements"
+    >
       {/* Background Effects */}
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-[#3b4eff]/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/3 right-0 w-96 h-96 bg-[#5f72ee]/5 rounded-full blur-3xl"></div>
