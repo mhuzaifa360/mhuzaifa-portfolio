@@ -1,7 +1,7 @@
 // src/components/Footer.jsx
 import { useState, useEffect } from "react";
 import { services, socialLinks } from "./constant/footer";
-import {navLinks} from "./constant/navLinks";
+import {navLinks} from "./constant/navlinks";
 import {huzaifaInfo} from "./constant/huzaifaInfo";
 
 import addressIcon from "../assets/icons/icons8-address-100.png";
