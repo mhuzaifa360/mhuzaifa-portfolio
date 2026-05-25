@@ -43,7 +43,7 @@ const Footer = () => {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
               <span className="text-[#7e8eff] text-xs">
-                Available for freelance work
+                Available for Remote & On-site Work.  
               </span>
             </div>
           </div>
