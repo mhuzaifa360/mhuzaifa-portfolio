@@ -1,12 +1,13 @@
 // src/components/Footer.jsx
 import { useState, useEffect } from "react";
 import { services, socialLinks } from "./constant/footer";
-import {navLinks} from "./constant/navlinks";
-import {huzaifaInfo} from "./constant/huzaifaInfo";
+import { navLinks } from "./constant/navlinks";
+import { huzaifaInfo } from "./constant/huzaifaInfo";
 
 import addressIcon from "../assets/icons/icons8-address-100.png";
 import emailIcon from "../assets/icons/icons8-mail-100.png";
 import phoneIcon from "../assets/icons/icons8-phone-100.png";
+import Subscribe from "./Subscribe.";
 
 const Footer = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -16,7 +17,6 @@ const Footer = () => {
     setIsVisible(true);
   }, []);
 
- 
   return (
     <footer className="bg-gradient-to-b from-[#0a0c12] to-[#05060a] pt-16 pb-8 px-6 md:px-12 relative overflow-hidden">
       {/* Background Glow */}
@@ -126,7 +126,9 @@ const Footer = () => {
               {/* Address */}
               <li className="flex items-center gap-3">
                 <img src={addressIcon} alt="Address Icon" className="w-5 h-5" />
-                <span className="text-[#b9c3e6] text-sm">{huzaifaInfo.personalInfo.address}</span>
+                <span className="text-[#b9c3e6] text-sm">
+                  {huzaifaInfo.personalInfo.address}
+                </span>
               </li>
             </ul>
           </div>
@@ -144,30 +146,22 @@ const Footer = () => {
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
                 return (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`w-10 h-10 rounded-full bg-[#1a1f36] flex items-center justify-center text-xl ${social.color} hover:scale-110 transition-all duration-300 border border-[#2a3150] hover:border-[#5f7cff]`}
-                  title={social.name}
-                >
-                  <Icon className="text-white"/>
-                </a>
-              )})}
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-10 h-10 rounded-full bg-[#1a1f36] flex items-center justify-center text-xl ${social.color} hover:scale-110 transition-all duration-300 border border-[#2a3150] hover:border-[#5f7cff]`}
+                    title={social.name}
+                  >
+                    <Icon className="text-white" />
+                  </a>
+                );
+              })}
             </div>
 
-            {/* Newsletter Signup */}
-            <div className="flex flex-col sm:flex-row gap-3">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 bg-[#0f1222] border border-[#2a3150] rounded-lg text-[#cdd9ff] text-sm focus:outline-none focus:border-[#5f7cff] transition-colors"
-              />
-              <button className="px-6 py-2 rounded-lg bg-gradient-to-r from-[#3b4eff] to-[#5f72ee] text-white text-sm font-semibold hover:scale-105 transition-all">
-                Subscribe
-              </button>
-            </div>
+              {/* Subscribe button */}
+            <Subscribe />
           </div>
         </div>
 
