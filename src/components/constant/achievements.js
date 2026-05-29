@@ -6,7 +6,7 @@ export const stats = [
   { value: huzaifaInfo.stats.projectsCompleted, label: "Projects Successfully Delivered", icon: "🚀" },
   { value: huzaifaInfo.stats.satisfiedClients, label: "Satisfied Clients", icon: "😊" },
   { value: huzaifaInfo.stats.yearofLearningAndExperience, label: "Years of Learning & Experience", icon: "📅" },
-  { value: huzaifaInfo.stats.GithubRepositories, label: "Code Reviews & Optimizations", icon: "💻" },
+  { value: huzaifaInfo.stats.GithubRepositories, label: "GitHub Repositories", icon: "💻" },
 ];
 
 export const achievements = [
