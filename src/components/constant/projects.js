@@ -268,7 +268,4 @@ export const projects = [
     live: "https://sofanest.co.uk/",
   },
 
-
-
-
 ];

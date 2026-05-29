@@ -154,7 +154,7 @@ const Footer = () => {
                     className={`w-10 h-10 rounded-full bg-[#1a1f36] flex items-center justify-center text-xl ${social.color} hover:scale-110 transition-all duration-300 border border-[#2a3150] hover:border-[#5f7cff]`}
                     title={social.name}
                   >
-                    <Icon className="text-white" />
+                    <Icon className={`text-white ${social.style}`} />
                   </a>
                 );
               })}
