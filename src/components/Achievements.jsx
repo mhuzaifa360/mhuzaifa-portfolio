@@ -10,6 +10,7 @@ const Achievements = () => {
   }, []);
 
   return (
+    // achivements section starts here
     <section
       className="bg-[#0a0c12] py-20 px-6 md:px-12 relative overflow-hidden"
       id="achievements"
