@@ -1,3 +1,5 @@
+
+// import images
 import csEcommerceImg from "../../assets/project images/csEcommerce.png";
 import mhuzaifaportfolioImg from "../../assets/project images/mhuzaifaportfolio.png";
 import tutornestImg from "../../assets/project images/tutornest.png";
@@ -67,7 +69,7 @@ export const projects = [
   // ? FRONTEND
   // huzaifa portfolio
   {
-    id: 2,
+    id: 1,
     title: "Huzaifa Portfolio",
     category: "frontend",
 
@@ -91,11 +93,11 @@ export const projects = [
     color: "from-green-500/20 to-teal-500/20",
   },
 
-  
+
   // ? HTML CSS JS
   //Bazm Coffee Website
   {
-    id: 3,
+    id: 1,
     title: "Bazm Coffee Website",
     category: "htmlcssjs",
 
@@ -120,7 +122,7 @@ export const projects = [
   },
   //Huzaifa Portfolio Crimson
   {
-    id: 3,
+    id: 2,
     title: "Huzaifa Portfolio Crimson",
     category: "htmlcssjs",
 
@@ -170,7 +172,7 @@ export const projects = [
   },
   //Huzaifa Portfolio Black and White
   {
-    id: 3,
+    id: 4,
     title: "Huzaifa Portfolio Black and White",
     category: "htmlcssjs",
 
@@ -192,7 +194,7 @@ export const projects = [
   },
   //BMI Calculator
   {
-    id: 4,
+    id: 5,
     title: "BMI Calculator",
     category: "htmlcssjs",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -210,7 +212,7 @@ export const projects = [
   },
   //Coffee Shop Website
   {
-    id: 5,
+    id: 7,
     title: "Coffee Shop Website",
     category: "htmlcssjs",
     tech: ["HTML", "CSS", "Responsive Design"],
@@ -228,7 +230,7 @@ export const projects = [
   },
   //Product Catalogue Website
   {
-    id: 6,
+    id: 8,
     title: "Product Catalogue Website",
     category: "htmlcssjs",
     tech: ["HTML", "CSS"],
