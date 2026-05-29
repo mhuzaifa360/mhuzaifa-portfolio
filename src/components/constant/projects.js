@@ -170,28 +170,6 @@ export const projects = [
 
     color: "from-yellow-500/20 to-teal-500/20",
   },
-  //Huzaifa Portfolio Black and White
-  {
-    id: 4,
-    title: "Huzaifa Portfolio Black and White",
-    category: "htmlcssjs",
-
-    tech: ["HTML", "CSS"],
-    image: portofolioBlackAndWhiteImg,
-    description:
-      "Portfolio website with a sleek black and white design, showcasing projects, skills, and contact information in a visually appealing and responsive layout.",
-
-    features: [
-      "Responsive design for all devices",
-      "Attractive layout and color scheme",
-      "Easy navigation with clear sections",
-      "Contact form for customer inquiries",
-    ],
-
-    live: "https://mhuzaifa360.github.io/Portfolio-website-black-white-blue/",
-    github: "https://github.com/mhuzaifa360/Portfolio-website-black-white-blue.git",
-    color: "from-yellow-500/20 to-teal-500/20",
-  },
   //BMI Calculator
   {
     id: 5,
